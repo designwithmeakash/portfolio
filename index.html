@@ -10,7 +10,7 @@
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml">
 
   <!-- 
     - custom css link
@@ -42,10 +42,7 @@
 
       <div class="navbar-actions">
 
-        <select name="language" id="lang">
-          <option value="en">En</option>
-          <option value="ar">Ar</option>
-        </select>
+     
 
         <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
           <span class="icon"></span>
@@ -122,29 +119,23 @@
 
         <ul class="hero-social-list">
 
-          <li>
-            <a href="#" class="hero-social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-
-              <div class="tooltip">Facebook</div>
-            </a>
-          </li>
+        
+         
 
           <li>
-            <a href="#" class="hero-social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-
-              <div class="tooltip">Twitter</div>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="hero-social-link">
+            <a href="https://www.linkedin.com/in/akash-m-2060aa260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="hero-social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
 
               <div class="tooltip">Linkedin</div>
             </a>
           </li>
+          
+<li>
+    <a href="https://www.instagram.com/ak_logocreation?igsh=MzZja2dkbTdsdXNu" class="hero-social-link">
+        <ion-icon name="logo-instagram"></ion-icon>
+        <div class="tooltip">Instagram</div>
+    </a>
+</li>
 
         </ul>
 
@@ -722,69 +713,41 @@ My journey in design has involved collaborating on diverse projects, where I've 
 
         </div>
 
-        <form action="" class="contact-form">
+      <form action="contact-handler.php" method="POST" class="contact-form">
+    <div class="form-wrapper">
+        <label for="name" class="form-label">Name</label>
+        <div class="input-wrapper">
+            <input type="text" name="name" id="name" required placeholder="e.g Akash" class="input-field">
+            <ion-icon name="person-circle"></ion-icon>
+        </div>
+    </div>
 
-          <div class="form-wrapper">
+    <div class="form-wrapper">
+        <label for="email" class="form-label">Email</label>
+        <div class="input-wrapper">
+            <input type="email" name="email" id="email" required placeholder="e.g akash@gmail.com" class="input-field">
+            <ion-icon name="mail"></ion-icon>
+        </div>
+    </div>
 
-            <label for="name" class="form-label">Name</label>
+    <div class="form-wrapper">
+        <label for="phone" class="form-label">Phone</label>
+        <div class="input-wrapper">
+            <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" required placeholder="Phone Number" class="input-field">
+            <ion-icon name="call"></ion-icon>
+        </div>
+    </div>
 
-            <div class="input-wrapper">
+    <div class="form-wrapper">
+        <label for="message" class="form-label">Message</label>
+        <div class="input-wrapper">
+            <textarea name="message" id="message" required placeholder="Write message..." class="input-field"></textarea>
+            <ion-icon name="chatbubbles"></ion-icon>
+        </div>
+    </div>
 
-              <input type="text" name="name" id="name" required placeholder="e.g Akash" class="input-field">
-
-              <ion-icon name="person-circle"></ion-icon>
-
-            </div>
-
-          </div>
-
-          <div class="form-wrapper">
-
-            <label for="email" class="form-label">Email</label>
-
-            <div class="input-wrapper">
-
-              <input type="email" name="email" id="email" required placeholder="e.g akash@gmail.com"
-                class="input-field">
-
-              <ion-icon name="mail"></ion-icon>
-
-            </div>
-
-          </div>
-
-          <div class="form-wrapper">
-
-            <label for="phone" class="form-label">Phone</label>
-
-            <div class="input-wrapper">
-
-              <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
-
-              <ion-icon name="call"></ion-icon>
-
-            </div>
-
-          </div>
-
-          <div class="form-wrapper">
-
-            <label for="message" class="form-label">Message</label>
-
-            <div class="input-wrapper">
-
-              <textarea name="message" id="message" required placeholder="Write message..."
-                class="input-field"></textarea>
-
-              <ion-icon name="chatbubbles"></ion-icon>
-
-            </div>
-
-          </div>
-
-          <button type="submit" class="btn btn-primary">Send</button>
-
-        </form>
+    <button type="submit" class="btn btn-primary">Send</button>
+</form>
 
       </section>
 
